@@ -1,0 +1,41 @@
+---
+
+clamav::clamd::manage_config: true
+clamav::clamd::config: /etc/clamd.conf
+clamav::clamd::config_group: '0'
+clamav::clamd::config_mode: '0644'
+clamav::clamd::config_owner: '0'
+clamav::clamd::config_template: clamav/clamd.conf.erb
+
+clamav::clamd::manage_package: true
+clamav::clamd::package_ensure: present
+clamav::clamd::package_name: clamav
+
+clamav::clamd::manage_service: true
+clamav::clamd::service_enable: true
+clamav::clamd::service_ensure: running
+clamav::clamd::service_name: clamav
+
+clamav::data::manage_package: false
+clamav::data::package_ensure: present
+clamav::data::package_name: ''
+
+clamav::freshclam::manage_config: true
+clamav::freshclam::manage_sysconfig: false
+clamav::freshclam::config: /etc/freshclam.conf
+clamav::freshclam::config_group: '0'
+clamav::freshclam::config_mode: '0644'
+clamav::freshclam::config_owner: '0'
+clamav::freshclam::config_template: clamav/freshclam.conf.erb
+clamav::freshclam::sysconfig: /etc/sysconfig/freshclam
+
+clamav::freshclam::manage_package: false
+clamav::freshclam::package_ensure: present
+clamav::freshclam::package_name: ''
+
+clamav::freshclam::manage_service: false
+clamav::freshclam::service_enable: true
+clamav::freshclam::service_ensure: running
+clamav::freshclam::service_name: freshclam
+
+clamav::freshclam::config::database_mirror: database.clamav.net

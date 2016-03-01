@@ -1,0 +1,15 @@
+{
+  "name": "igromik/clamav",
+  "version": "0.0.1",
+  "author": "Kimo Rosenbaum",
+  "summary": "Manages ClamAV",
+  "license": "BSD",
+  "source": "https://github.com/kimor79/puppet-module-clamav",
+  "project_page": "https://github.com/kimor79/puppet-module-clamav",
+  "issues_url": "https://github.com/kimor79/puppet-module-clamav/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": "hiera"
+}
+

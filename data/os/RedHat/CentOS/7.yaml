@@ -1,0 +1,21 @@
+---
+
+clamav::clamd::config: /etc/clamd.d/scan.conf
+clamav::clamd::package_name: clamav-scanner-systemd
+clamav::clamd::service_name: clamd@scan
+
+clamav::data::manage_package: true
+clamav::data::package_ensure: present
+clamav::data::package_name: clamav-data
+
+clamav::freshclam::manage_package: true
+clamav::freshclam::manage_sysconfig: true
+clamav::freshclam::package_ensure: present
+clamav::freshclam::package_name: clamav-update
+
+clamav::clamd::config::allow_supplementary_groups: 'yes'
+clamav::clamd::config::local_socket: '/var/run/clamd.scan/clamd.sock'
+clamav::clamd::config::log_syslog: 'yes'
+clamav::clamd::config::user: clamscan
+
+clamav::freshclam::config::log_syslog: 'yes'
