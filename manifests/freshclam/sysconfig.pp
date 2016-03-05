@@ -8,6 +8,7 @@ class clamav::freshclam::sysconfig inherits clamav::freshclam {
       match             => 'REMOVE ME',
       multiple          => true,
       match_for_absence => true,
+      require           => Class['clamav::freshclam::install'],
     }
   }
 
