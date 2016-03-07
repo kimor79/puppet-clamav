@@ -1,6 +1,6 @@
 {
   "name": "igromik/clamav",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Kimo Rosenbaum",
   "summary": "Manages ClamAV",
   "license": "BSD-3-Clause",

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.0.4
+
+* Fix config options that can be specified multiple times
+
 ## 0.0.3
 
 * Fix metadata.json to match puppet guidelines

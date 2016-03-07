@@ -159,7 +159,7 @@ TCPSocket <%= @tcp_socket %>
 #TCPAddr 127.0.0.1
 <% if @tcp_addr -%>
 <% @tcp_addr.each do |val| -%>
-TCPAddr <%= @val %>
+TCPAddr <%= val %>
 <% end -%>
 <% end -%>
 
@@ -251,7 +251,7 @@ IdleTimeout <%= @idle_timeout %>
 #ExcludePath ^/sys/
 <% if @exclude_path -%>
 <% @exclude_path.each do |val| -%>
-ExcludePath <%= @val %>
+ExcludePath <%= val %>
 <% end -%>
 <% end -%>
 
@@ -362,7 +362,7 @@ DetectPUA <%= @detect_pua %>
 #ExcludePUA PWTool
 <% if @exclude_pua -%>
 <% @exclude_pua.each do |val| -%>
-ExcludePUA <%= @val %>
+ExcludePUA <%= val %>
 <% end -%>
 <% end -%>
 
@@ -374,7 +374,7 @@ ExcludePUA <%= @val %>
 #IncludePUA RAT
 <% if @include_pua -%>
 <% @include_pua.each do |val| -%>
-IncludePUA <%= @val %>
+IncludePUA <%= val %>
 <% end -%>
 <% end -%>
 
@@ -832,7 +832,7 @@ ScanOnAccess <%= @scan_on_access %>
 #OnAccessMountPath /
 <% if @on_access_mount_path -%>
 <% @on_access_mount_path.each do |val| -%>
-IncludePUA <%= @val %>
+IncludePUA <%= val %>
 <% end -%>
 <% end -%>
 

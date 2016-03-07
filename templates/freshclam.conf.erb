@@ -140,7 +140,7 @@ CompressLocalDatabase <%= @compress_local_database %>
 #DatabaseCustomURL file:///mnt/nfs/local.hdb
 <% if @database_custom_url -%>
 <% @database_custom_url.each do |val| -%>
-DatabaseCustomURL <%= @val %>
+DatabaseCustomURL <%= val %>
 <% end -%>
 <% end -%>
 
@@ -158,7 +158,7 @@ DatabaseCustomURL <%= @val %>
 #PrivateMirror mirror2.mynetwork.com
 <% if @private_mirror -%>
 <% @private_mirror.each do |val| -%>
-PrivateMirror <%= @val %>
+PrivateMirror <%= val %>
 <% end -%>
 <% end -%>
 
@@ -346,6 +346,6 @@ Bytecode <%= @bytecode %>
 #ExtraDatabase dbname2
 <% if @extra_database -%>
 <% @extra_database.each do |val| -%>
-ExtraDatabase <%= @val %>
+ExtraDatabase <%= val %>
 <% end -%>
 <% end -%>
