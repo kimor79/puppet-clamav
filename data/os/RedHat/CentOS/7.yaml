@@ -4,6 +4,10 @@ clamav::clamd::config: /etc/clamd.d/scan.conf
 clamav::clamd::package_name: clamav-scanner-systemd
 clamav::clamd::service_name: clamd@scan
 
+clamav::clamscan::manage_package: true
+clamav::clamscan::package_ensure: present
+clamav::clamscan::package_name: clamav
+
 clamav::data::manage_package: true
 clamav::data::package_ensure: present
 clamav::data::package_name: clamav-data

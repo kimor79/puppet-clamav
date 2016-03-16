@@ -16,6 +16,10 @@ clamav::clamd::service_enable: true
 clamav::clamd::service_ensure: running
 clamav::clamd::service_name: clamav
 
+clamav::clamscan::manage_package: false
+clamav::clamscan::package_ensure: present
+clamav::clamscan::package_name: ''
+
 clamav::data::manage_package: false
 clamav::data::package_ensure: present
 clamav::data::package_name: ''

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.0
+
+* Install clamav (for clamscan) on CentOS-7
+
 ## 0.0.4
 
 * Fix config options that can be specified multiple times

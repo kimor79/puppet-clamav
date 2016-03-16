@@ -22,5 +22,6 @@
 class clamav {
 
   include ::clamav::clamd
+  include ::clamav::clamscan
   include ::clamav::freshclam
 }
